@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=" " autocomplete="off" >
+        <label for="name">Name*:</label>
+        <input type="text"  autofocus name="fname" required size="30" minlength="3" maxlength="20" pattern="[A-Za-z ]{5,20}" id="name"><br><br>
+        <label for="age">Age :</label>
+        <input type="number" min="18" max="35" step="2" id="age"><br><br>
+        <label for="phno">Phone Number :</label>
+        <input type="tel" name="telephone" pattern="[0-9]{10}" id="phno"><br><br>
+        <label for="adhaar">Adhaar Number :</label>
+        <input type="number" name="Adhaar" pattern="[0-9 ]{14}" id="adhaar"><br><br>
+        <!-- <input type="file" accept=".png,.jpeg"> -->
+         <input type="file" multiple accept="image/*,audio/*,.doc,.pdf"><br><br>
+         <label for="">DOB :</label>
+         <input type="date" minlength="01-01-2002" maxlength="01-01-2026"><br><br>
+         <label for="" >Gender :</label><br><br>
+         <input type="radio" name="Gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" name="Female" value="female" id="male" checked>
+         <label for="">Female</label>
+         <input type="radio" name="Gender" value="others" disabled>
+         <label for="">Others</label><br><br>
+         <label for="">Programming Languages :</label><br><br>
+         <input type="checkbox" name="Programming" value="Java" checked>
+         <label for="">Java</label>
+         <input type="checkbox" name="Programming" value="Python">
+         <label for="">Python</label>
+         <input type="checkbox" name="Programming" value="C" disabled>
+         <label for="">C</label>
+         <input type="checkbox" name="Programming" value="html & CSS">
+         <label for="">Html & Css</label><br><br> 
+         <select name="State" id=""><br>
+            <option disabled selected>--Select your state--</option>
+            <option value="ap">Andhra Pradesh</option>
+            <option value="TS">Telangana</option>
+            <option value="KA">Kerala</option>
+            <option value="TN">TamilNadu</option>
+            <option value="KS">Karnataka</option>
+            <option value="DH">Delhi</option>
+            <option value="GA">Goa</option>
+         </select><br><br>  
+         <textarea name="feedback" id="" readonly>Good</textarea><br><br>
+         <label for="">Password :</label>
+         <input type="password" name="password" pattern="[A-Z]{1}[a-z]{3,}[\W+]{1}[0-9]{1,}"><br><br> 
+         <!-- to check the password only this password will be allowed -->
+          <input type="password" pattern="abc@123" name="password"><br><br>
+
+        <input type="submit" id="">
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
